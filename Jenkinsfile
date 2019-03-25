@@ -1,5 +1,6 @@
 pipeline {
-new agent
+    agent any
+
     stages {
         stage('Build') {
             steps {
@@ -13,7 +14,7 @@ new agent
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying........'
+                echo 'Deploying....'
             }
         }
     }
